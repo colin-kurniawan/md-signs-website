@@ -1,4 +1,3 @@
-import Logo from '../assets/logo.jpg'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import Phone from '../assets/phone.png'
@@ -18,9 +17,9 @@ export default function Header() {
             <div className="w-full h-[40px] bg-[#0E1527] -mb-4 flex justify-between pt-2.5 pl-3">
                 <div className="flex flex-row">
                     <img className="w-[18px] h-[18px] translate-y-0.5" src={Phone} alt="phone.png" />
-                    <span className="text-white ml-1 -translate-y-0.5">(410) 555-SIGN</span>
+                    <span className="text-white ml-1 -translate-y-0.5">(410) 296-SIGN</span>
                     <img className="w-[18px] h-[18px] translate-y-0.5 ml-10" src={Email} alt="" />
-                    <span className="text-white -translate-y-0.5 ml-1">email@email.com</span>
+                    <span className="text-white -translate-y-0.5 ml-1">jobs@mdsignsgraphics.com</span>
                 </div>
                 <div className="flex flex-row mr-5">
                     <img className="w-[18px] h-[18px] translate-y-0.5" src={Location} alt="" />
@@ -76,31 +75,23 @@ export default function Header() {
                                 <line x1="6" y1="6" x2="18" y2="18" />
                             </svg>
                             </div>
-                            <Link className={linkStyle} to="">
-                                <span className={`${navStyles} text-[30px]`}><strong>Work</strong></span>
+                            <Link className={linkStyle} to="/">
+                                <span className={`${navStyles} text-[30px]`}><strong>Home</strong></span>
                                 <span className={underlineStyle}></span>
                             </Link>
-                            <Link className={linkStyle} to="">
-                                <span className={`${navStyles} text-[30px]`}><strong>Think</strong></span>
+                            <Link className={linkStyle} to="/about">
+                                <span className={`${navStyles} text-[30px]`}><strong>About</strong></span>
                                 <span className={underlineStyle}></span>
                             </Link>
-                            <Link className={linkStyle} to="">
-                                <span className={`${navStyles} text-[30px]`}>About</span>
+                            <Link className={linkStyle} to="/services">
+                                <span className={`${navStyles} text-[30px]`}>Services</span>
                                 <span className={underlineStyle}></span>
                             </Link>
-                            <Link className={linkStyle} to="">
-                                <span className={`${navStyles} text-[30px]`}>Capabilities</span>
+                            <Link className={linkStyle} to="/portfolio">
+                                <span className={`${navStyles} text-[30px]`}>Portfolio</span>
                                 <span className={underlineStyle}></span>
                             </Link>
-                            <Link className={linkStyle} to="">
-                                <span className={`${navStyles} text-[30px]`}>Clients</span>
-                                <span className={underlineStyle}></span>
-                            </Link>
-                            <Link className={linkStyle} to="">
-                                <span className={`${navStyles} text-[30px]`}>Testimonials</span>
-                                <span className={underlineStyle}></span>
-                            </Link>
-                            <Link className={linkStyle} to="">
+                            <Link className={linkStyle} to="/contact">
                                 <span className={`${navStyles} text-[30px]`}>Contact</span>
                                 <span className={underlineStyle}></span>
                             </Link>

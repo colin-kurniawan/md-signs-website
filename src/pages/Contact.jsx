@@ -22,7 +22,7 @@ export default function Contact() {
                     <p className={contactDescription}>Speak directly with our team</p>
                     <a href="tel:+14105550123">
                         <button className={`${contactButton} bg-[#00BCD4] text-white hover:bg-blue-500 translate-all duration-300`}>
-                            410-245-SIGN
+                            410-296-SIGN
                         </button>
                     </a>
                 </div>

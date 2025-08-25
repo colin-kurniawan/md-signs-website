@@ -6,6 +6,7 @@ import wrench from '../assets/wrench.png'
 import { useState } from 'react'
 import person from '../assets/person.jpeg'
 import check from '../assets/check.png'
+import { Link } from 'react-router-dom'
 
 const circleStyle = "flex justify-center items-center rounded-full h-50 w-50 border-gray-500 border-2 translate-all duration-300 hover:bg-gray-200"
 const boxStyles = "rounded-xl w-[450px] h-auto bg-white flex flex-col justify-center items-center gap-2 p-7 translate-all duration-500 hover:translate-y-1 hover:bg-gray-300 group"
@@ -25,6 +26,8 @@ export default function Home() {
     return (
         <div>
             <ImageCarousel />
+            
+            {/* 
             <div className="flex flex-col justify-center items-center bg-gray-100 pt-30 pb-30">
                 <h2 className="md:text-5xl text-2xl font-extrabold">Signs That <span className="text-[#00BCD4]">Demand</span> Attention</h2>
                 <p className="mt-5 text-gray-600">From concept to installation, we create impactful signage that makes your business impossible to ignore.</p>
@@ -51,39 +54,42 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col gap-15 justify-center items-center pb-30 pt-30">
-                <h2 className="font-extrabold lg:text-5xl text-3xl">Why <span className="text-[#00BCD4]">Maryland</span> Businesses <span className="text-[#00BCD4]">Choose</span> Us</h2>
-                <div className="flex lg:flex-row flex-col justify-center items-center gap-50">
+            */}
+
+            <div className="flex flex-col gap-15 justify-center items-center pb-30 pt-30 bg-gray-100">
+                <h2 className="font-extrabold lg:text-5xl text-4xl">Why <span className="text-[#00BCD4]">Maryland</span> Businesses <span className="text-[#00BCD4]">Choose</span> Us</h2>
+                <div className="flex lg:flex-row flex-col justify-center items-center gap-10 lg:gap-50">
                     <div className="flex flex-col gap-7">
                         <div className="flex flex-row gap-3 items-center tracking-widest">
                             <img className="w-[25px] h-[25px]" src={check} alt="" />
-                            <p className="text-xl">20+ years of sign industry experience</p>
+                            <p className="text-xl">15+ years of sign industry experience</p>
                         </div>
                         <div className="flex flex-row gap-3 items-center tracking-widest">
                             <img className="w-[25px] h-[25px]" src={check} alt="" />
-                            <p className="text-xl">20+ years of sign industry experience</p>
+                            <p className="text-xl">Full-service: design, fabrication, installation</p>
                         </div>
                         <div className="flex flex-row gap-3 items-center tracking-widest">
                             <img className="w-[25px] h-[25px]" src={check} alt="" />
-                            <p className="text-xl">20+ years of sign industry experience</p>
+                            <p className="text-xl">Premium materials with warranties</p>
                         </div>
                         <div className="flex flex-row gap-3 items-center tracking-widest">
                             <img className="w-[25px] h-[25px]" src={check} alt="" />
-                            <p className="text-xl">20+ years of sign industry experience</p>
+                            <p className="text-xl">Fast Turnaround Times</p>
                         </div>
                         <div className="flex flex-row gap-3 items-center tracking-widest">
                             <img className="w-[25px] h-[25px]" src={check} alt="" />
-                            <p className="text-xl">20+ years of sign industry experience</p>
+                            <p className="text-xl">Serving Maryland & Beyond</p>
                         </div>
                         <div className="flex justify-center items-center w-[300px] h-[50px] bg-blue-950 rounded-xl hover:bg-blue-800 translate-all duration-300 ml-15 mt-5">
-                            <p className="text-white tracking-wide font-bold">Learn More About Us</p>
+                            <Link className="text-white tracking-wide font-bold" to="/about">Learn More About Us</Link>
                         </div>
                     </div>
                     <img className="h-[350] w-[550px] rounded-xl shadow-xl" src={person} alt="" />
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center pt-30 pb-30 gap-10 bg-gray-100">
-                <h2 className="font-extrabold lg:text-5xl text-3xl">What Our <span className="text-[#00BCD4]">Clients</span> Say</h2>
+            {/*
+            <div className="flex flex-col justify-center items-center pt-30 pb-30 gap-10 bg-white">
+                <h2 className="font-extrabold lg:text-5xl text-4xl">What Our <span className="text-[#00BCD4]">Clients</span> Say</h2>
                 <div className="flex flex-col lg:grid lg:grid-cols-3 gap-5">
                     <div className={clientBoxes}>
                         <div className="text-[#00BCD4]">★★★★★</div>
@@ -105,13 +111,14 @@ export default function Home() {
                     </div>        
                 </div>
             </div>
-            <div className="flex flex-col gap-10 pt-30 pb-30">
+            */}
+            <div className="flex flex-col gap-10 pt-30 pb-30 bg-white">
                 <span className="text-6xl font-extrabold pl-20 tracking-widest">Our <span className="text-[#00BCD4]">Process</span></span>
                 <div className="flex flex-row gap-3 pl-20 w-[90%]">
-                    <span className="text-black tracking-widest font-bold text-2xl">HOW WE <span className="text-[#00BCD4]">WORK</span></span>
+                    <span className="text-black tracking-widest font-bold text-2xl">HOW WE WORK</span>
                     <hr className="lg:block border-t-1 border-black w-[80%] my-4 ml-5 hidden" />
                 </div>
-                <div className="flex flex-row lg:gap-15 justify-center md:gap-10">
+                <div className="flex flex-col gap-5 lg:flex-row lg:gap-15 justify-center items-center md:gap-10">
                     {circles.map((circle, index) => (
                         <div key={index} 
                             className={`${circleStyle} ${ activeIndex == index ? "bg-gray-400" : "bg-white"}`} 

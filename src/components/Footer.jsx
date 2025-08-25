@@ -1,6 +1,7 @@
 import phone from '../assets/phone.png'
 import home from '../assets/home.png'
 import email from '../assets/email.png'
+import { Link } from 'react-router-dom'
 
 const smallText = "text-gray-100 font-extralight md:text-lg tracking-wider"
 const imageStyle = "w-[25px]"
@@ -17,11 +18,11 @@ export default function Footer() {
                     Have A Question? Feel free to email or call us. If you want an estimate or have a file you need to send us, use our Online Estimate Form.
                 </p>
                 <div className="flex flex-row gap-3 w-[75%] justify-center items-center">
-                    <a className={smallText}>Home</a>
+                    <Link className={`${smallText} translate-all duration-300 hover:text-blue-300`} to="/">Home</Link>
                     <span className={smallText}>/</span>
-                    <a className={smallText} href="">Portfolio</a>
+                    <Link className={`${smallText} translate-all duration-300 hover:text-blue-300`} to="/portfolio">Portfolio</Link>
                     <span className={smallText}>/</span>
-                    <a className={smallText}>About Us</a>
+                    <Link className={`${smallText} translate-all duration-300 hover:text-blue-300`} to="/about">About Us</Link>
                 </div>
             </div>
             <div className="flex flex-col justify-start items-center row-start-2 col-start-2 gap-10 lg:-ml-30 mt-3">

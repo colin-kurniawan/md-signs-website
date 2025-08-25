@@ -6,12 +6,12 @@
   .carousel-track {
     display: flex;
     width: max-content;
-    animation: scroll 20s linear infinite;
+    animation: scroll 25s linear infinite;
   }
   
   .carousel-track img {
     height: 640px;
-    width: 400px;
+    width: 500px;
     margin-right: 10px;
   }
   
