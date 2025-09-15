@@ -1,12 +1,30 @@
-# React + Vite
+# MDSigns Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive business website built for **MDSigns**, a local sign company.  
+Designed and developed with **React** and **Tailwind CSS** to deliver a modern, accessible, and mobile-friendly experience.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Responsive Design**: Optimized for both desktop and mobile users.  
+- **Modern UI/UX**: Built with React + Tailwind CSS for a sleek and efficient interface.  
+- **Brand-Centered**: Website design reflects the company’s brand identity and vision.  
+- **Accessibility**: Ensures usability for all visitors across devices.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **React** – Frontend framework for component-based development  
+- **Tailwind CSS** – Utility-first CSS framework for rapid UI styling  
+- **JavaScript** – Core programming language  
+- **HTML5 & CSS** – Semantic structure and styling  
 
-## Expanding the ESLint configuration
+## 📈 Process
+- Partnered closely with the business owner to translate their vision into a digital platform.  
+- Iterated on designs through feedback sessions to align with brand identity.  
+- Delivered a responsive, production-ready website deployed for real-world use.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+*(Add screenshots or a demo GIF here if available)*  
+
+## 🔗 Live Demo
+[View Website](https://www.marylandsignsandgraphics.com/) <!-- replace with actual link if deployed -->
+
+## 📄 License
+This project is developed for MDSigns and is not intended for open-source reuse without permission.
