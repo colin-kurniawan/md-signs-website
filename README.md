@@ -20,9 +20,6 @@ Designed and developed with **React** and **Tailwind CSS** to deliver a modern, 
 - Iterated on designs through feedback sessions to align with brand identity.  
 - Delivered a responsive, production-ready website deployed for real-world use.  
 
-## 📸 Screenshots
-*(Add screenshots or a demo GIF here if available)*  
-
 ## 🔗 Live Demo
 [View Website](https://www.marylandsignsandgraphics.com/) <!-- replace with actual link if deployed -->
 
